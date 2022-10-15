@@ -10,9 +10,146 @@
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+      defer
+    ></script>
     <title>Text site</title>
   </head>
   <body>
-    Hello world !
+    <!-- Header -->
+    <header class="mb-5">
+      <div class="logo m-2 mb-4">
+        <p class="fst-italic">Mon site de textes !</p>
+      </div>
+      <nav class="navbar justify-content-around border">
+        <a href="#" class="nav-link active" aria-current="page">Accueil</a>
+        <a href="#" class="nav-link">Naviguer</a>
+        <a href="#" class="nav-link">Connexion</a>
+      </nav>
+    </header>
+    <!-- Search bar -->
+    <div class="input-group justify-content-center">
+      <div class="form-outline">
+        <input
+          type="search"
+          id="searchBar"
+          class="form-control form-control-lg"
+          placeholder="Rechercher un texte"
+        />
+      </div>
+      <button type="button" class="btn btn-success btn-lg">Go !</button>
+    </div>
+    <h1 class="text-center m-5">
+      Un site dédié au partage de textes en tout genre.
+    </h1>
+    <!-- Catégories -->
+    <div class="container">
+      <h2 class="mb-4 text-center">Catégories :</h2>
+      <div class="row row-cols-3 g-3">
+        <div class="col">
+          <div class="text-center d-grid">
+            <button type="button" class="btn btn-outline-secondary btn-lg py-4">
+              Réaliste
+            </button>
+          </div>
+        </div>
+        <div class="col">
+          <div class="text-center d-grid">
+            <button type="button" class="btn btn-outline-secondary btn-lg py-4">
+              Poésie
+            </button>
+          </div>
+        </div>
+        <div class="col">
+          <div class="text-center d-grid">
+            <button type="button" class="btn btn-outline-secondary btn-lg py-4">
+              Fantasy
+            </button>
+          </div>
+        </div>
+        <div class="col">
+          <div class="text-center d-grid">
+            <button type="button" class="btn btn-outline-secondary btn-lg py-4">
+              S.F.
+            </button>
+          </div>
+        </div>
+        <div class="col">
+          <div class="text-center d-grid">
+            <button type="button" class="btn btn-outline-secondary btn-lg py-4">
+              Essai
+            </button>
+          </div>
+        </div>
+        <div class="col">
+          <div class="text-center d-grid">
+            <button type="button" class="btn btn-outline-secondary btn-lg py-4">
+              Fanfiction
+            </button>
+          </div>
+        </div>
+        <div class="col">
+          <div class="text-center d-grid">
+            <button type="button" class="btn btn-outline-secondary btn-lg py-4">
+              Horreur
+            </button>
+          </div>
+        </div>
+        <div class="col">
+          <div class="text-center d-grid">
+            <button type="button" class="btn btn-outline-secondary btn-lg py-4">
+              Érotique
+            </button>
+          </div>
+        </div>
+        <div class="col">
+          <div class="text-center d-grid">
+            <button type="button" class="btn btn-outline-secondary btn-lg py-4">
+              Autre...
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- News -->
+    <div class="container">
+      <h2 class="mt-4 m-3 text-center">News :</h2>
+      <div class="border p-1">
+        <p class="fst-italic">20/10/2022 par Admin :</p>
+        <p>Ajout de la fonctionnalité X</p>
+      </div>
+      <div class="border p-1">
+        <p class="fst-italic">15/10/2022 par Admin :</p>
+        <p>Le site est en ligne ! Blablabla</p>
+      </div>
+    </div>
+    <!-- Derniers textes -->
+    <div class="container">
+      <h2 class="mt-4 m-3 text-center">Derniers textes :</h2>
+      <div class="border p-1">
+        <h3>Lorem Ipsum</h3>
+        <h4>par Cicéron</h4>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis,
+          consequatur.
+        </p>
+      </div>
+      <div class="border p-1">
+        <h3>Dolor sit amet</h3>
+        <h4>par Cicerone</h4>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis,
+          consequatur.
+        </p>
+      </div>
+    </div>
+    <footer class="m-2 mt-4 pt-2 border-top d-flex justify-content-around">
+      <a href="#">A propos</a>
+      <a href="#">Nous contacter</a>
+      <a href="#">Plan du site</a>
+    </footer>
   </body>
 </html>
